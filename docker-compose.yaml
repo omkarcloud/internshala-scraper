@@ -1,0 +1,10 @@
+services:
+  internshala-scraper:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Optional — Internshala answers plain HTTP, so leave this unset.
+      # - INTERNSHALA_PROXY=http://user:pass@host:port

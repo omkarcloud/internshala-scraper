@@ -1,0 +1,90 @@
+@baseUrl = http://127.0.0.1:6090
+# @baseUrl = https://internshala-scraper.omkar.cloud
+
+# ========================================
+# INTERNSHIPS
+# ========================================
+
+### Internship search (every internship, newest first)
+GET {{baseUrl}}/internshala/internships/search
+
+### Internship search: category + city + minimum stipend
+GET {{baseUrl}}/internshala/internships/search?category=Marketing&location=Delhi&min_stipend=5000
+
+### Internship search: keyword, work from home, part time
+GET {{baseUrl}}/internshala/internships/search?query=python&work_from_home=true&part_time=true
+
+### Internship search: with a job offer, fast response, early applicant, 2-month, page 2
+GET {{baseUrl}}/internshala/internships/search?with_job_offer=true&fast_response=true&early_applicant=true&duration=2&page=2
+
+### Internship search: category + city slugs, start date, for women (ONE category and ONE city per call)
+GET {{baseUrl}}/internshala/internships/search?category=web-development&location=bangalore&start_date=2026-11-01&for_women=true
+
+### Internship search: international
+GET {{baseUrl}}/internshala/internships/search?international=true
+
+### Internship details (link)
+GET {{baseUrl}}/internshala/internships/details?internship=https://internshala.com/internship/detail/marketing-sales-internship-in-multiple-locations-at-reliance-nippon-life-insurance1789563888
+
+### Internship details (slug)
+GET {{baseUrl}}/internshala/internships/details?internship=graphic-design-internship-in-mumbai-at-simit-bhagat-studios1792384358
+
+# ========================================
+# JOBS
+# ========================================
+
+### Job search (every job)
+GET {{baseUrl}}/internshala/jobs/search
+
+### Job search: category + city + salary + experience
+GET {{baseUrl}}/internshala/jobs/search?category=Marketing&location=Mumbai&min_salary=300000&experience=1
+
+### Job search: fresher jobs, work from home, keyword
+GET {{baseUrl}}/internshala/jobs/search?query=react&work_from_home=true&experience=fresher
+
+### Job search: part time, for women
+GET {{baseUrl}}/internshala/jobs/search?part_time=true&for_women=true
+
+### Job details (link)
+GET {{baseUrl}}/internshala/jobs/details?job=https://internshala.com/job/detail/remote-part-time-part-time-tutor-work-from-home-job-at-planetspark1792389837
+
+# ========================================
+# COMPANIES
+# ========================================
+
+### Company details (slug)
+GET {{baseUrl}}/internshala/companies/details?company=planetspark-1580118881
+
+### Company details (link)
+GET {{baseUrl}}/internshala/companies/details?company=https://internshala.com/company/reliance-nippon-life-insurance-1543381830/careers/
+
+### Company details (name, resolved through its listings)
+GET {{baseUrl}}/internshala/companies/details?company=PlanetSpark
+
+### Company openings: internships
+GET {{baseUrl}}/internshala/companies/openings?company=Reliance Nippon Life Insurance
+
+### Company openings: jobs, page 1
+GET {{baseUrl}}/internshala/companies/openings?company=planetspark-1580118881&type=jobs
+
+# ========================================
+# LOOKUPS
+# ========================================
+
+### Categories (internship board)
+GET {{baseUrl}}/internshala/categories
+
+### Categories (job board)
+GET {{baseUrl}}/internshala/categories?type=jobs
+
+### Locations
+GET {{baseUrl}}/internshala/locations
+
+### Autocomplete: categories
+GET {{baseUrl}}/internshala/autocomplete?query=pyth
+
+### Autocomplete: cities
+GET {{baseUrl}}/internshala/autocomplete?query=bang&type=location
+
+### Health
+GET {{baseUrl}}/internshala/health
