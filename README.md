@@ -123,6 +123,7 @@ You're a developer — we know how hard completing a project can be. So we offer
 ## ⚡ Popular Scrapers by Omkar Cloud
 
 - [**Google Maps Scraper (3,100+ GitHub Stars)**](https://github.com/omkarcloud/google-maps-scraper) — type "dentists in New York", get every business as a ready-to-call lead list: phones, emails, websites & reviews. Up to 100K free leads/month.
+- [**Tofler Scraper**](https://github.com/omkarcloud/tofler-scraper) — Indian company profiles, financials, directors & state-wise company lists from Tofler
 - [**JobStreet Scraper**](https://github.com/omkarcloud/jobstreet-scraper) — JobStreet & JobsDB jobs, salaries, companies & reviews across 6 Asian markets
 - [**Hirist Scraper**](https://github.com/omkarcloud/hirist-scraper) — Hirist IT jobs, company ratings, recruiters & skills with live job counts
 - [**Cutshort Scraper**](https://github.com/omkarcloud/cutshort-scraper) — Cutshort India tech jobs, INR salary bands, skills & company profiles
